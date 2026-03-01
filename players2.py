@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from pyscript import document
 
 classmates = [
 "Balagat, Michael",
