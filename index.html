@@ -27,6 +27,7 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
+
 #output {
     margin-top: 20px;
     padding: 15px;
@@ -37,49 +38,20 @@ body {
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">🏆 Intramurals System</a>
-
-    <div class="navbar-nav ms-auto">
-      <a class="nav-link" href="signup.html">Sign Up Page (Skills Test)</a>
-      <a class="nav-link active" href="teamchecker.html">Team Checker (Seatwork 2)</a>
-      <a class="nav-link" href="players.html">List of Players (Project)</a>
-    </div>
-  </div>
-</nav>     
 <div class="container">
-<h1 class="text-center">🏆 Intramurals Team Checker</h1>
-
+<h1 class="text-center">🏆 Account Creator</h1>
 <form>
-<p><b>Are you registered online?</b></p>
-<input type="radio" id="registrationconfirmation1" name="reg"> Yes<br>
-<input type="radio" id="registrationconfirmation2" name="reg"> No<br><br>
-
-<p><b>Are you medically cleared by the clinic?</b></p>
-<input type="radio" id="medicalclearance1" name="med"> Yes<br>
-<input type="radio" id="medicalclearance2" name="med"> No<br><br>
-
-<p><b>What grade are you?</b></p>
-<input type="radio" id="7" name="grade"> 7<br>
-<input type="radio" id="8" name="grade"> 8<br>
-<input type="radio" id="9" name="grade"> 9<br>
-<input type="radio" id="10" name="grade"> 10<br><br>
-
-<p><b>What section are you?</b></p>
-<input type="radio" id="SAPPHIRE" name="section"> SAPPHIRE<br>
-<input type="radio" id="EMERALD" name="section"> EMERALD<br>
-<input type="radio" id="RUBY" name="section"> RUBY<br>
-<input type="radio" id="TOPAZ" name="section"> TOPAZ<br>
-<input type="radio" id="JADE" name="section"> JADE<br><br>
-
-<button type="button" id="runAll" class="btn btn-dark w-100">
-    Check
-</button>
+  <center><label for="name">Name</label><br>
+  <input type="text" id="name" name="n4me"><br>
+  <label for="pass">Password</label><br>
+  <input type="text" id="pass" name="p4ss">
+  <br>
+  <br>
+ <button type="button" py-click="SIGNUP" id="SIGNup">
+    Sign up
+</button> <center>
 </form>
-
 <div id="output"></div>
-</div>
 <py-script src="main.py"></py-script>
+</div>
 </body>
-</html>
