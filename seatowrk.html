@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<title>Intramurals Team Checker</title>
+
+<style>
+body {
+    background: linear-gradient(#1e7f43, #1f4ed8, #facc15, #dc2626);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    width: 900px;
+    padding: 25px;
+    margin: 40px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">🏆 Intramurals System</a>
+
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" href="signup.html">Sign Up Page (Skills Test)</a>
+      <a class="nav-link active" href="teamchecker.html">Team Checker (Seatwork 2)</a>
+      <a class="nav-link" href="players.html">List of Players (Project)</a>
+    </div>
+  </div>
+</nav>     
+<div class="container">
+<h1 class="text-center">🏆 Intramurals Team Checker</h1>
+
+<form>
+<p><b>Are you registered online?</b></p>
+<input type="radio" id="registrationconfirmation1" name="reg"> Yes<br>
+<input type="radio" id="registrationconfirmation2" name="reg"> No<br><br>
+
+<p><b>Are you medically cleared by the clinic?</b></p>
+<input type="radio" id="medicalclearance1" name="med"> Yes<br>
+<input type="radio" id="medicalclearance2" name="med"> No<br><br>
+
+<p><b>What grade are you?</b></p>
+<input type="radio" id="7" name="grade"> 7<br>
+<input type="radio" id="8" name="grade"> 8<br>
+<input type="radio" id="9" name="grade"> 9<br>
+<input type="radio" id="10" name="grade"> 10<br><br>
+
+<p><b>What section are you?</b></p>
+<input type="radio" id="SAPPHIRE" name="section"> SAPPHIRE<br>
+<input type="radio" id="EMERALD" name="section"> EMERALD<br>
+<input type="radio" id="RUBY" name="section"> RUBY<br>
+<input type="radio" id="TOPAZ" name="section"> TOPAZ<br>
+<input type="radio" id="JADE" name="section"> JADE<br><br>
+
+<button type="button" id="runAll" class="btn btn-dark w-100">
+    Check
+</button>
+</form>
+
+<div id="output"></div>
+</div>
+<py-script src="main.py"></py-script>
+</body>
+</html>
