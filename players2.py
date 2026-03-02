@@ -1,5 +1,6 @@
 from pyscript import document
 
+def players (e)
 classmates = [
 "Balagat, Michael",
 "Bernardo, Miko",
