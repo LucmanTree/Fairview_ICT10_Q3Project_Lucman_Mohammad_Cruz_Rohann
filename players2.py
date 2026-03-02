@@ -30,15 +30,12 @@ classmates = [
 "Valdez, David",
 ]
 
-@app.route("/", methods=["GET", "POST"])
-def players():
-    names_to_show = []
+ playerlist = document.getElementById("classmates")
 
-    if request.method == "POST":
-        for name in classmates:
-            names_to_show.append(name)
+    playerlist.innerHTML = ""
 
-    return render_template("players.html", names=names_to_show)
+    for name in players:
+        li = document.createElement("li")
+        li.innerText = name
+        player_list.appendChild(li) #this one inserts the list item into the webpage
 
-if __name__ == "__main__":
-    app.run(debug=True)
