@@ -38,4 +38,5 @@ classmates = [
     for name in players:
         li = document.createElement("li")
         li.innerText = name
+     display(playerlist)
       
