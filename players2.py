@@ -38,5 +38,4 @@ classmates = [
     for name in players:
         li = document.createElement("li")
         li.innerText = name
-        player_list.appendChild(li) #this one inserts the list item into the webpage
-
+      
